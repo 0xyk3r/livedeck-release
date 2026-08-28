@@ -88,8 +88,8 @@
       "platform": "win32",
       "arch": "x64",
       "name": "LiveDeck-1.0.0-x64-Portable.exe",
-      "size": 95758193,
-      "sha256": "5220b30e872db49203ad20c5bcd47a02e417ca3afeed079ca7afbb8b9da13624",
+      "size": 95767789,
+      "sha256": "cf76203ff881dc8b680e8104058e400aed98cd9f5c34631c2ed8a65d2fbd2e53",
       "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Portable.exe",
       "mirrors": [
         "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Portable.exe",
@@ -103,8 +103,8 @@
       "platform": "win32",
       "arch": "x64",
       "name": "LiveDeck-1.0.0-x64-Setup.exe",
-      "size": 95978915,
-      "sha256": "c0386c40207452fcd90cd4552cdea631e81d3611a9aabf2855586a6503b3b5f6",
+      "size": 95988550,
+      "sha256": "8e617916c39551c043f6552b4af12edb443b496cfee70dd725b560926abf1929",
       "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Setup.exe",
       "mirrors": [
         "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Setup.exe",
