@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "releasedAt": "2026-08-29T00:00:00.000Z",
+  "summary": "首个公开版本。多路直播自由布局，全屏弹幕，智能导演模式，可选登录以使用账号功能。",
+  "critical": false,
+  "changes": [
+    {
+      "type": "feature",
+      "text": "同时观看多个斗鱼直播间，每个窗口独立音量、清晰度、线路与弹幕开关"
+    },
+    {
+      "type": "feature",
+      "text": "自由拖动布局，八向缩放，自动吸附与参考线，按住 Alt 临时禁用吸附"
+    },
+    {
+      "type": "feature",
+      "text": "预设排列：平铺、主次、横排、竖排一键摆好"
+    },
+    {
+      "type": "feature",
+      "text": "布局方案可命名保存多套并随时切换，支持导出导入"
+    },
+    {
+      "type": "feature",
+      "text": "占位模式：用占位符占住游戏窗口区域，边玩边看"
+    },
+    {
+      "type": "feature",
+      "text": "清晰度与 CDN 线路自由切换，默认最高清晰度"
+    },
+    {
+      "type": "feature",
+      "text": "兼容回放模式，支持回放的房间可用进度条拖动观看"
+    },
+    {
+      "type": "feature",
+      "text": "音频 SOLO：一键只听某个房间，其余全部静音"
+    },
+    {
+      "type": "feature",
+      "text": "房间信息展示：热度、贵宾数、福星挑战赛区、弹幕速率、各类榜单"
+    },
+    {
+      "type": "feature",
+      "text": "全局弹幕：所有房间弹幕融合显示，以颜色指示点区分来源房间"
+    },
+    {
+      "type": "feature",
+      "text": "高性能弹幕：可选 WebGL 批渲染，上万条同屏仍保持高帧率"
+    },
+    {
+      "type": "feature",
+      "text": "特别关注：按昵称关注用户，其进房、发言、送礼时突出显示"
+    },
+    {
+      "type": "feature",
+      "text": "弹幕屏蔽：关键词、正则、用户名、等级与长度过滤"
+    },
+    {
+      "type": "feature",
+      "text": "开播监控：开播与下播分别发送系统通知，点击开播通知直接开窗"
+    },
+    {
+      "type": "feature",
+      "text": "智能导演模式：自动高亮热度快速上涨的直播间，评分权重可配置"
+    },
+    {
+      "type": "feature",
+      "text": "登录后可发送彩色弹幕、一键签到、一键续粉丝牌，并同步关注与最近观看"
+    },
+    {
+      "type": "feature",
+      "text": "深色 / 浅色 / 跟随系统主题，关闭按钮可配置为最小化到托盘"
+    },
+    {
+      "type": "feature",
+      "text": "有直播窗口时自动阻止系统休眠，窗口大小位置与全屏状态自动记忆"
+    },
+    {
+      "type": "feature",
+      "text": "提供 NSIS 安装版与免安装便携版，便携版数据随 exe 同级目录迁移"
+    }
+  ],
+  "assets": [
+    {
+      "kind": "portable",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.0.0-x64-Portable.exe",
+      "size": 95758193,
+      "sha256": "5220b30e872db49203ad20c5bcd47a02e417ca3afeed079ca7afbb8b9da13624",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Portable.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Portable.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Portable.exe",
+        "https://gitproxy.click/https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Portable.exe"
+      ]
+    },
+    {
+      "kind": "installer",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.0.0-x64-Setup.exe",
+      "size": 95978915,
+      "sha256": "c0386c40207452fcd90cd4552cdea631e81d3611a9aabf2855586a6503b3b5f6",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Setup.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Setup.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Setup.exe",
+        "https://gitproxy.click/https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Setup.exe"
+      ]
+    }
+  ]
+}

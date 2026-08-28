@@ -1,0 +1,38 @@
+{
+  "id": "2026-08-29-welcome",
+  "level": "info",
+  "title": "LiveDeck 1.0.0 发布",
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "expiresAt": null,
+  "appliesTo": {
+    "minVersion": null,
+    "maxVersion": null,
+    "platforms": [
+      "win32"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "感谢使用 LiveDeck。这是首个公开版本，欢迎反馈问题与建议。"
+    },
+    {
+      "type": "paragraph",
+      "text": "几点值得先知道的："
+    },
+    {
+      "type": "list",
+      "items": [
+        "看直播和看弹幕都不需要登录，登录只为解锁发弹幕与账号任务",
+        "一键签到与一键续牌属于自动化操作，可能与平台协议相悖，是否使用请自行判断",
+        "程序不会自动下载或安装更新，检测到新版本只在界面提示，由你点击后在浏览器中下载",
+        "程序未购买代码签名证书，Windows 会提示未知发布者，可核对下载页的 SHA256 确认文件完整"
+      ]
+    },
+    {
+      "type": "link",
+      "text": "查看完整更新说明与免责声明",
+      "url": "https://github.com/0xyk3r/livedeck-release"
+    }
+  ]
+}

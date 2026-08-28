@@ -1,0 +1,12 @@
+# 行尾统一为 LF。api/ 下的 JSON 必须逐字节稳定 —— 清单签名是对文件原始字节
+# 计算的，任何行尾转换都会让签名验证失败。
+* text=auto eol=lf
+
+# 二进制文件不做行尾转换
+*.png binary
+*.ico binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.exe binary
+*.sig binary

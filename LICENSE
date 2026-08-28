@@ -1,0 +1,127 @@
+LiveDeck 最终用户许可协议
+LiveDeck End User License Agreement
+
+版权所有 (c) 2026 0xyk3r。保留所有权利。
+Copyright (c) 2026 0xyk3r. All rights reserved.
+
+================================================================================
+中文版本（以中文版本为准）
+================================================================================
+
+在下载、安装或使用 LiveDeck（以下称"本软件"）之前，请阅读本协议。一旦下载、
+安装或使用本软件，即表示您已阅读、理解并同意接受本协议全部条款的约束。若您不
+同意本协议的任何条款，请勿下载、安装或使用本软件。
+
+第一条 许可授予
+
+在您遵守本协议全部条款的前提下，著作权人授予您一项有限的、非独占的、不可转让
+的、可撤销的许可，允许您：
+
+(a) 在您本人拥有或控制的设备上安装并运行本软件；
+(b) 仅将本软件用于个人的、非商业性的目的；
+(c) 为备份目的复制本软件的安装文件。
+
+第二条 限制
+
+除本协议明确许可外，您不得：
+
+(a) 将本软件用于任何商业目的，包括但不限于销售、出租、出借、商业性放映或作为
+    商业服务的组成部分提供给第三方；
+(b) 对本软件进行反向工程、反编译、反汇编，或以其他方式尝试获取本软件的源代码，
+    但适用法律强制允许的范围除外；
+(c) 修改本软件、创作其衍生作品，或对本软件进行二次打包、汉化、去广告、破解等
+    形式的改动并予以传播；
+(d) 移除、遮蔽或篡改本软件中的任何版权声明、商标或其他权利声明；
+(e) 通过本协议第三条规定的官方渠道以外的任何途径再分发本软件的安装文件或其
+    衍生版本，包括但不限于上传至第三方下载站、软件市场、网盘分享站；
+(f) 将本软件用于任何违反您所在地法律法规的活动。
+
+第三条 官方分发渠道
+
+本软件的唯一官方分发渠道为下列地址的 Releases 页面：
+
+    https://github.com/0xyk3r/livedeck-release
+
+通过其他任何渠道获得的本软件副本，其完整性与安全性均未经著作权人验证。著作权
+人对经非官方渠道分发的副本不承担任何责任。您可以自由地向他人分享上述官方地址
+的链接，此种分享不受第二条 (e) 项限制。
+
+第四条 知识产权
+
+本软件及其全部副本的著作权、商标权及其他知识产权，均归著作权人所有。本协议仅
+授予您使用本软件的有限许可，并未向您转让本软件的任何所有权。
+
+本软件为独立开发的第三方工具，与斗鱼（武汉斗鱼网络科技有限公司）及其关联公司
+无任何隶属、合作或授权关系。"斗鱼"及相关商标、标识归其权利人所有，本软件对
+上述标识的必要提及仅用于说明软件的适用范围，不构成对商标权的主张。
+
+第五条 第三方内容
+
+本软件不提供、不存储、不转码、不缓存、不转发任何直播内容。本软件通过第三方平
+台公开下发的地址将内容流交由本地播放组件播放，其行为与您使用浏览器访问该平台
+网页在性质上并无不同。您通过本软件访问的一切内容，其著作权及其他权利均归内容
+的原始权利人（平台与主播）所有，与著作权人无关。
+
+第六条 免责
+
+本软件按"现状"（AS IS）提供，不附带任何形式的明示或默示担保，包括但不限于
+对适销性、特定用途适用性及不侵权的担保。著作权人不保证本软件无缺陷、不中断、
+安全或能满足您的特定需求。
+
+在适用法律允许的最大范围内，著作权人对因使用或无法使用本软件而导致的任何直接、
+间接、偶然、特殊、惩罚性或后果性损害（包括但不限于账号权益受损、数据丢失、
+利润损失、业务中断）不承担任何责任，即使已被告知此类损害的可能性。
+
+关于使用本软件的具体风险，另见随本软件一同提供的《免责声明》
+（DISCLAIMER.md），该文件为本协议不可分割的组成部分。
+
+第七条 协议的终止
+
+若您违反本协议任何条款，本协议授予您的许可即自动终止，您应立即停止使用并删除
+本软件的全部副本。
+
+第八条 协议的变更
+
+著作权人保留修改本协议的权利。修改后的协议将随新版本软件一同发布。若您不同意
+修改后的条款，应停止使用相应版本的软件；继续使用新版本即视为接受修改后的条款。
+
+第九条 其他
+
+本协议的解释、效力及争议解决均适用中华人民共和国法律（不含港澳台地区法律）。
+本协议任何条款被认定为无效或不可执行的，不影响其余条款的效力。
+
+================================================================================
+ENGLISH VERSION (for reference only)
+================================================================================
+
+This is a proprietary software license. ALL RIGHTS RESERVED.
+
+You are granted a limited, non-exclusive, non-transferable, revocable license to
+install and run this software on devices you own or control, for personal and
+non-commercial purposes only.
+
+You may NOT: use this software commercially; reverse engineer, decompile or
+disassemble it; modify it or create derivative works; repackage, crack or
+otherwise alter and distribute it; remove copyright notices; redistribute the
+installation files through any channel other than the official repository at
+https://github.com/0xyk3r/livedeck-release; or use it for any activity that
+violates applicable law. Sharing a link to the official repository is permitted.
+
+This software is an independently developed third-party tool. It has NO
+affiliation with, and is NOT endorsed by, DouYu (Wuhan Douyu Network Technology
+Co., Ltd.) or any of its affiliates. All trademarks are the property of their
+respective owners.
+
+This software does not provide, store, transcode, cache or redistribute any
+streaming content. Copyright in all content accessed through this software
+belongs to its original rights holders.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+In case of any discrepancy between the Chinese and English versions, the
+Chinese version shall prevail.

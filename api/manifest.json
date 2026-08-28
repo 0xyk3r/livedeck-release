@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-28T20:20:21.105Z",
+  "endpoints": {
+    "base": [
+      "https://gh-proxy.com/https://raw.githubusercontent.com/0xyk3r/livedeck-release/main/api/",
+      "https://v6.gh-proxy.org/https://raw.githubusercontent.com/0xyk3r/livedeck-release/main/api/",
+      "https://gitproxy.click/https://raw.githubusercontent.com/0xyk3r/livedeck-release/main/api/",
+      "https://cdn.jsdelivr.net/gh/0xyk3r/livedeck-release@main/api/",
+      "https://raw.githubusercontent.com/0xyk3r/livedeck-release/main/api/"
+    ]
+  },
+  "channels": {
+    "stable": {
+      "version": "1.0.0",
+      "releasedAt": "2026-08-29T00:00:00.000Z",
+      "minSupportedVersion": "1.0.0",
+      "detail": "releases/1.0.0.json",
+      "detailSha256": "cdead3af9cd0945b48dc3993f8705134ede8d81db3ee28bc4ba4ef4f19548627",
+      "page": "https://github.com/0xyk3r/livedeck-release/releases/tag/v1.0.0"
+    }
+  },
+  "yanked": [],
+  "history": [
+    {
+      "version": "1.0.0",
+      "releasedAt": "2026-08-29T00:00:00.000Z",
+      "detail": "releases/1.0.0.json",
+      "detailSha256": "cdead3af9cd0945b48dc3993f8705134ede8d81db3ee28bc4ba4ef4f19548627"
+    }
+  ],
+  "notices": [
+    {
+      "id": "2026-08-29-welcome",
+      "level": "info",
+      "title": "LiveDeck 1.0.0 发布",
+      "publishedAt": "2026-08-29T00:00:00.000Z",
+      "detail": "notices/2026-08-29-welcome.json",
+      "detailSha256": "61a19ee4ff45cd2000d0641a2f5fdda6427a232b25a08738ce60dc190ccbb809",
+      "appliesTo": {
+        "minVersion": null,
+        "maxVersion": null,
+        "platforms": [
+          "win32"
+        ]
+      },
+      "expiresAt": null
+    }
+  ]
+}

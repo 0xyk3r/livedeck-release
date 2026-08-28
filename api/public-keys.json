@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "keys": [
+    {
+      "id": "k1",
+      "algorithm": "ed25519",
+      "publicKey": "MCowBQYDK2VwAyEAnhS+aBDHxSvjRjSz3cAC0O6i2RTZMOkTfkJdu7WJyrM=",
+      "status": "active",
+      "createdAt": "2026-08-28T19:14:03.929Z"
+    },
+    {
+      "id": "k2",
+      "algorithm": "ed25519",
+      "publicKey": "MCowBQYDK2VwAyEAOUz/0jpKVvNrUEI4e57rE9cdYwEyBt+03gaq3U7U4HY=",
+      "status": "reserve",
+      "createdAt": "2026-08-28T19:14:03.968Z"
+    }
+  ]
+}

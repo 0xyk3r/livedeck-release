@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <option name="projectDefaultTargetUuid" value="13681609-4ea3-4319-adf5-3bbd47bdb0cc" />
+    <targets>
+      <target name="WSL - Ubuntu" type="wsl" uuid="13681609-4ea3-4319-adf5-3bbd47bdb0cc">
+        <config>
+          <option name="distributionMsId" value="Ubuntu" />
+          <option name="projectRootOnTarget" value="{exitCode=0, timeout=false, cancelled=false, stdout=/tmp/tmp.cjIekn471T&#13;&#10;, stderr=}/Default (Template) Project" />
+        </config>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config>
+            <option name="homePath" value="/home/anjiongyi/.sdkman/candidates/java/current" />
+            <option name="javaVersionString" value="21" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>
