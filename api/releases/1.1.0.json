@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "version": "1.1.0",
+  "releasedAt": "2026-09-05T00:00:00.000Z",
+  "summary": "新增鱼吧与应用内下载更新包，回看弹幕补全归档时段，并修复多项使用问题。",
+  "critical": false,
+  "changes": [
+    {
+      "type": "feature",
+      "text": "新增斗鱼鱼吧：浏览动态、相册与视频，登录后可签到、发帖、点赞"
+    },
+    {
+      "type": "feature",
+      "text": "更新包改为应用内下载并自动校验 SHA256，完成后由你手动安装"
+    },
+    {
+      "type": "feature",
+      "text": "回看弹幕接入官方归档，应用没开着的时段也有弹幕"
+    },
+    {
+      "type": "feature",
+      "text": "控制台显示认证槽位占用，被借用槽位的窗口显示锁形标记"
+    },
+    {
+      "type": "feature",
+      "text": "公会名册支持固定补录房号，纳入无公会或签在别家的主播"
+    },
+    {
+      "type": "fix",
+      "text": "认证槽位已满时，新窗口发弹幕会自动借用槽位，不再静默失败"
+    },
+    {
+      "type": "fix",
+      "text": "钻粉弹幕配色改为与斗鱼网页端一致的四段渐变"
+    },
+    {
+      "type": "fix",
+      "text": "全局静音时音量按钮说明原因并给出解除入口，不再像坏了"
+    },
+    {
+      "type": "fix",
+      "text": "右键菜单贴近屏幕右缘时不再折行"
+    },
+    {
+      "type": "perf",
+      "text": "空闲期预热设置面板，首次打开不再空等"
+    },
+    {
+      "type": "perf",
+      "text": "打开房间少一次重复请求，进房更快"
+    },
+    {
+      "type": "fix",
+      "text": "打开面板后主输入框及时获得焦点，首次打开也能直接输入"
+    },
+    {
+      "type": "fix",
+      "text": "直播窗口溢出菜单切换更稳定，HUD 不会在菜单打开时提前隐藏"
+    }
+  ],
+  "assets": [
+    {
+      "kind": "portable",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.1.0-x64-Portable.exe",
+      "size": 95820034,
+      "sha256": "eb125441b10b4f9d56c014bad9cf89305d328fda7c616f89f6531f941378ea31",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.1.0/LiveDeck-1.1.0-x64-Portable.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.1.0/LiveDeck-1.1.0-x64-Portable.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.1.0/LiveDeck-1.1.0-x64-Portable.exe",
+        "https://gh.llkk.cc/https://github.com/0xyk3r/livedeck-release/releases/download/v1.1.0/LiveDeck-1.1.0-x64-Portable.exe",
+        "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.1.0/LiveDeck-1.1.0-x64-Portable.exe"
+      ]
+    },
+    {
+      "kind": "installer",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.1.0-x64-Setup.exe",
+      "size": 96040756,
+      "sha256": "5fb4f0b57a2e6548d67766aa558aeb691a1a3279ac5ac063944c8f788e125520",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.1.0/LiveDeck-1.1.0-x64-Setup.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.1.0/LiveDeck-1.1.0-x64-Setup.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.1.0/LiveDeck-1.1.0-x64-Setup.exe",
+        "https://gh.llkk.cc/https://github.com/0xyk3r/livedeck-release/releases/download/v1.1.0/LiveDeck-1.1.0-x64-Setup.exe",
+        "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.1.0/LiveDeck-1.1.0-x64-Setup.exe"
+      ]
+    }
+  ]
+}
