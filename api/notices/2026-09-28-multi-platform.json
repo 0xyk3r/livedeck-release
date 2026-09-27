@@ -1,0 +1,37 @@
+{
+  "id": "2026-09-28-multi-platform",
+  "level": "important",
+  "title": "LiveDeck 1.2.0：支持虎牙与哔哩哔哩",
+  "publishedAt": "2026-09-28T00:00:00.000Z",
+  "expiresAt": "2026-11-28T00:00:00.000Z",
+  "appliesTo": {
+    "minVersion": null,
+    "maxVersion": null,
+    "platforms": [
+      "win32"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "1.2.0 起，LiveDeck 在斗鱼之外新增虎牙与哔哩哔哩直播，三个平台的房间可以混排在同一个布局里。添加房间时先选平台，再输入房间号或直接粘贴链接。"
+    },
+    {
+      "type": "paragraph",
+      "text": "使用新平台前值得先知道的："
+    },
+    {
+      "type": "list",
+      "items": [
+        "看直播和看弹幕仍然不需要登录，三个平台各自独立登录，只为解锁发弹幕、关注同步与粉丝牌",
+        "以第三方工具登录任何平台并发弹幕、关注等，都可能被平台风控识别，是否使用请自行判断",
+        "登录在各平台官方页面完成，账号密码不经过本程序，凭据只保存在本机"
+      ]
+    },
+    {
+      "type": "link",
+      "text": "查看 1.2.0 完整更新内容",
+      "url": "https://github.com/0xyk3r/livedeck-release/blob/main/CHANGELOG.md"
+    }
+  ]
+}

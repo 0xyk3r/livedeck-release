@@ -6,7 +6,7 @@
   "expiresAt": null,
   "appliesTo": {
     "minVersion": null,
-    "maxVersion": null,
+    "maxVersion": "1.1.0",
     "platforms": [
       "win32"
     ]

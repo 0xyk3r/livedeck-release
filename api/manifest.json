@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T22:47:55.305Z",
+  "generatedAt": "2026-09-27T23:33:29.785Z",
   "endpoints": {
     "base": [
       "https://gh-proxy.com/https://raw.githubusercontent.com/0xyk3r/livedeck-release/main/api/",
@@ -44,15 +44,31 @@
   ],
   "notices": [
     {
+      "id": "2026-09-28-multi-platform",
+      "level": "important",
+      "title": "LiveDeck 1.2.0：支持虎牙与哔哩哔哩",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "detail": "notices/2026-09-28-multi-platform.json",
+      "detailSha256": "a7a1bc68b7eccf8482cb2cb59516f92eaf9f1ca5372332650f4c06ffb56c9bcc",
+      "appliesTo": {
+        "minVersion": null,
+        "maxVersion": null,
+        "platforms": [
+          "win32"
+        ]
+      },
+      "expiresAt": "2026-11-28T00:00:00.000Z"
+    },
+    {
       "id": "2026-08-29-welcome",
       "level": "info",
       "title": "LiveDeck 1.0.0 发布",
       "publishedAt": "2026-08-29T00:00:00.000Z",
       "detail": "notices/2026-08-29-welcome.json",
-      "detailSha256": "521cd0e028fd3e94047f7abd5fb4efe5ac47ef82f93b47ba8fc601f042ee1115",
+      "detailSha256": "d5e31884a39eb890503397430a78440eeecacc6225d8d1968ec6064344534811",
       "appliesTo": {
         "minVersion": null,
-        "maxVersion": null,
+        "maxVersion": "1.1.0",
         "platforms": [
           "win32"
         ]
