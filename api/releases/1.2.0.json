@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0",
+  "releasedAt": "2026-09-28T00:00:00.000Z",
+  "summary": "新增虎牙与哔哩哔哩直播，三平台统一账号、弹幕互动与发现；新增 PK 比分、录像与成长任务。",
+  "critical": false,
+  "changes": [
+    {
+      "type": "feature",
+      "text": "接入虎牙与哔哩哔哩直播：取流、弹幕、分类发现与房间互动"
+    },
+    {
+      "type": "feature",
+      "text": "虎牙、B 站支持官方登录，可发弹幕、看关注与最近访问"
+    },
+    {
+      "type": "feature",
+      "text": "三平台统一粉丝牌、表情、等级徽章与粉丝牌成长任务"
+    },
+    {
+      "type": "feature",
+      "text": "斗鱼支持切换粉丝牌，发弹幕时可自动佩戴本房粉丝牌"
+    },
+    {
+      "type": "feature",
+      "text": "新增斗鱼、虎牙录像与 B 站视频，可直接加入布局观看"
+    },
+    {
+      "type": "feature",
+      "text": "弹幕支持 Alt + 单击选取、引用与 +1，并显示发言者资料"
+    },
+    {
+      "type": "feature",
+      "text": "新增消息与事件时间线，房间事件可按平台分别筛选"
+    },
+    {
+      "type": "feature",
+      "text": "斗鱼 PK 与连麦：底部比分条实时显示比分与连麦成员"
+    },
+    {
+      "type": "feature",
+      "text": "关注用户升级为统计表，记录其弹幕、进场与礼物动态"
+    },
+    {
+      "type": "feature",
+      "text": "新增像素补给站：新手教学、日常任务与成就"
+    },
+    {
+      "type": "feature",
+      "text": "新增播放调试面板，可查看速率、缓冲与帧率并复制报告"
+    },
+    {
+      "type": "feature",
+      "text": "HUD 显示钻粉数、粉丝团人数与高能弹幕队列"
+    },
+    {
+      "type": "change",
+      "text": "全新视觉与控制台布局，右键菜单按用途分组"
+    },
+    {
+      "type": "change",
+      "text": "选中窗口的操作并入控制台，选区标记随 HUD 自动隐藏"
+    },
+    {
+      "type": "fix",
+      "text": "斗鱼多开时同一线路第 7 路起无法出画"
+    },
+    {
+      "type": "fix",
+      "text": "斗鱼未登录也能看原画，取流失败时自动换策略重试"
+    },
+    {
+      "type": "fix",
+      "text": "斗鱼登录过期后自动恢复，不再需要重新登录"
+    },
+    {
+      "type": "fix",
+      "text": "满级主播的房间信息无法读取"
+    },
+    {
+      "type": "fix",
+      "text": "高能弹幕显示实付金额，有减免时补充原价"
+    },
+    {
+      "type": "fix",
+      "text": "关窗或菜单操作后撤销、重做快捷键失效"
+    },
+    {
+      "type": "fix",
+      "text": "导入异常布局文件时拒绝导入并保留当前布局"
+    }
+  ],
+  "assets": [
+    {
+      "kind": "portable",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.2.0-x64-Portable.exe",
+      "size": 103159794,
+      "sha256": "cb82947b4fae413c593b1b54384e2c8bc9c6b183638f472b1eea3a046b7b02f3",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Portable.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Portable.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Portable.exe",
+        "https://gh.llkk.cc/https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Portable.exe",
+        "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Portable.exe"
+      ]
+    },
+    {
+      "kind": "installer",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.2.0-x64-Setup.exe",
+      "size": 103380516,
+      "sha256": "3c9156b8366f2a6ad89c1c79270fb12b165b1fa65cc74e0867036331ac942e78",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Setup.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Setup.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Setup.exe",
+        "https://gh.llkk.cc/https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Setup.exe",
+        "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Setup.exe"
+      ]
+    }
+  ]
+}

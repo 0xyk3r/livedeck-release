@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T10:48:06.375Z",
+  "generatedAt": "2026-09-27T22:47:55.305Z",
   "endpoints": {
     "base": [
       "https://gh-proxy.com/https://raw.githubusercontent.com/0xyk3r/livedeck-release/main/api/",
@@ -13,16 +13,22 @@
   },
   "channels": {
     "stable": {
-      "version": "1.1.0",
-      "releasedAt": "2026-09-05T00:00:00.000Z",
+      "version": "1.2.0",
+      "releasedAt": "2026-09-28T00:00:00.000Z",
       "minSupportedVersion": "1.0.0",
-      "detail": "releases/1.1.0.json",
-      "detailSha256": "5fc4ce2a57fe35a19e73e2463da8d49b85c6e8fe47a3b87735decdf46eef64ca",
-      "page": "https://github.com/0xyk3r/livedeck-release/releases/tag/v1.1.0"
+      "detail": "releases/1.2.0.json",
+      "detailSha256": "a1c95c321a4669278e254255e1fe76350ac8c84ae92ce8fe44a12374fd77a48c",
+      "page": "https://github.com/0xyk3r/livedeck-release/releases/tag/v1.2.0"
     }
   },
   "yanked": [],
   "history": [
+    {
+      "version": "1.2.0",
+      "releasedAt": "2026-09-28T00:00:00.000Z",
+      "detail": "releases/1.2.0.json",
+      "detailSha256": "a1c95c321a4669278e254255e1fe76350ac8c84ae92ce8fe44a12374fd77a48c"
+    },
     {
       "version": "1.1.0",
       "releasedAt": "2026-09-05T00:00:00.000Z",
