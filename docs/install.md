@@ -20,17 +20,17 @@
 
     https://github.com/0xyk3r/livedeck-release/releases/latest
 
-大陆网络直连 GitHub 下载可能很慢或失败，可以用公益加速服务，在原地址前面拼一个代理前缀即可。以安装版为例：
+大陆网络直连 GitHub 下载可能很慢或失败，可以用公益加速服务，在原地址前面拼一个代理前缀即可。以 1.2.0 安装版为例（其他版本把两处版本号换掉）：
 
 ```
 # 原始地址
-https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Setup.exe
+https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Setup.exe
 
 # 加速地址（在前面拼上代理域名）
-https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.0.0/LiveDeck-1.0.0-x64-Setup.exe
+https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.2.0/LiveDeck-1.2.0-x64-Setup.exe
 ```
 
-可用的代理服务有 `gh-proxy.com`、`v6.gh-proxy.org`、`gitproxy.click` 等，哪个快用哪个。这些服务由第三方免费提供，不受本项目控制，也可能随时失效。
+可用的代理服务有 `gh-proxy.com`、`v6.gh-proxy.org`、`gh.llkk.cc`、`ghfast.top`，哪个快用哪个。这些服务由第三方免费提供，不受本项目控制，也可能随时失效。
 
 > 用代理下载后**建议核对 SHA256**，见下一节。代理服务理论上有替换文件的能力，校验值是你确认文件完好的手段。
 
@@ -39,7 +39,7 @@ https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/downloa
 每个 Release 的说明里都列了文件的 SHA256 值。核对方法（PowerShell）：
 
 ```powershell
-Get-FileHash .\LiveDeck-1.0.0-x64-Setup.exe -Algorithm SHA256
+Get-FileHash .\LiveDeck-1.2.0-x64-Setup.exe -Algorithm SHA256
 ```
 
 把输出的 `Hash` 与发布页上的值比对，一致即说明文件与开发者构建出来的完全相同。大小写不影响，PowerShell 输出大写，发布页是小写。
@@ -84,6 +84,7 @@ Get-FileHash .\LiveDeck-1.0.0-x64-Setup.exe -Algorithm SHA256
 | --- | --- |
 | `window-state.json` | 窗口大小、位置、是否最大化 |
 | `app-prefs.json` | 关闭按钮行为等应用级偏好 |
+| `update-state.json` | 上次检查更新的结果与公告已读状态 |
 | `logs/` | 运行日志，排查问题时用 |
 | Chromium Profile 相关目录 | 登录状态等浏览器数据 |
 
