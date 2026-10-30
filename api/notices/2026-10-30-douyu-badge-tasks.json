@@ -1,0 +1,37 @@
+{
+  "id": "2026-10-30-douyu-badge-tasks",
+  "level": "important",
+  "title": "斗鱼批量弹幕任务与背包赠礼使用提示",
+  "publishedAt": "2026-10-30T00:00:00.000Z",
+  "expiresAt": null,
+  "appliesTo": {
+    "minVersion": "1.3.0",
+    "maxVersion": null,
+    "platforms": [
+      "win32"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "「工具 → 粉丝牌总览」中的斗鱼批量弹幕任务，会向符合任务条件的多个房间逐个发送你填写的弹幕。这属于自动化批量操作，可能违反平台规则或触发账号风控，是否使用请自行判断。"
+    },
+    {
+      "type": "list",
+      "items": [
+        "发送范围为总览已加载的全部斗鱼粉丝牌房间，不受当前筛选和分页限制；开始前请确认发送内容",
+        "可以停止后续发送，但已提交的请求仍可能完成；任务奖励与完成状态以斗鱼返回结果为准",
+        "在粉丝牌详情赠送荧光棒会消耗背包内对应数量的道具，请在赠送前确认房间和数量"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "查看粉丝牌总览不会触发这些操作；看直播和看弹幕仍然无需登录。"
+    },
+    {
+      "type": "link",
+      "text": "阅读账号功能风险说明",
+      "url": "https://github.com/0xyk3r/livedeck-release/blob/main/DISCLAIMER.md"
+    }
+  ]
+}

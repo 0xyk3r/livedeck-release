@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T23:33:29.785Z",
+  "generatedAt": "2026-10-30T00:05:40.013Z",
   "endpoints": {
     "base": [
       "https://gh-proxy.com/https://raw.githubusercontent.com/0xyk3r/livedeck-release/main/api/",
@@ -13,16 +13,22 @@
   },
   "channels": {
     "stable": {
-      "version": "1.2.0",
-      "releasedAt": "2026-09-28T00:00:00.000Z",
+      "version": "1.3.0",
+      "releasedAt": "2026-10-30T00:00:00.000Z",
       "minSupportedVersion": "1.0.0",
-      "detail": "releases/1.2.0.json",
-      "detailSha256": "a1c95c321a4669278e254255e1fe76350ac8c84ae92ce8fe44a12374fd77a48c",
-      "page": "https://github.com/0xyk3r/livedeck-release/releases/tag/v1.2.0"
+      "detail": "releases/1.3.0.json",
+      "detailSha256": "247c0e2c427198bd093b90dbc53aa8cd54e8f998124eaff6a234c82b02476b35",
+      "page": "https://github.com/0xyk3r/livedeck-release/releases/tag/v1.3.0"
     }
   },
   "yanked": [],
   "history": [
+    {
+      "version": "1.3.0",
+      "releasedAt": "2026-10-30T00:00:00.000Z",
+      "detail": "releases/1.3.0.json",
+      "detailSha256": "247c0e2c427198bd093b90dbc53aa8cd54e8f998124eaff6a234c82b02476b35"
+    },
     {
       "version": "1.2.0",
       "releasedAt": "2026-09-28T00:00:00.000Z",
@@ -44,15 +50,47 @@
   ],
   "notices": [
     {
+      "id": "2026-10-30-douyu-badge-tasks",
+      "level": "important",
+      "title": "斗鱼批量弹幕任务与背包赠礼使用提示",
+      "publishedAt": "2026-10-30T00:00:00.000Z",
+      "detail": "notices/2026-10-30-douyu-badge-tasks.json",
+      "detailSha256": "f64af4cf71cf53c7b865ca5c960d28142ae42b04d9b04187404ef2ee5bdf1036",
+      "appliesTo": {
+        "minVersion": "1.3.0",
+        "maxVersion": null,
+        "platforms": [
+          "win32"
+        ]
+      },
+      "expiresAt": null
+    },
+    {
+      "id": "2026-10-30-livedeck-1-3",
+      "level": "info",
+      "title": "LiveDeck 1.3.0：多路直播对齐，粉丝牌集中管理",
+      "publishedAt": "2026-10-30T00:00:00.000Z",
+      "detail": "notices/2026-10-30-livedeck-1-3.json",
+      "detailSha256": "69a935445856c66bb8a405a2269d51258fe46685f1c3fdc3d83b9b5f2624d391",
+      "appliesTo": {
+        "minVersion": null,
+        "maxVersion": "1.3.0",
+        "platforms": [
+          "win32"
+        ]
+      },
+      "expiresAt": "2026-12-30T00:00:00.000Z"
+    },
+    {
       "id": "2026-09-28-multi-platform",
       "level": "important",
       "title": "LiveDeck 1.2.0：支持虎牙与哔哩哔哩",
       "publishedAt": "2026-09-28T00:00:00.000Z",
       "detail": "notices/2026-09-28-multi-platform.json",
-      "detailSha256": "a7a1bc68b7eccf8482cb2cb59516f92eaf9f1ca5372332650f4c06ffb56c9bcc",
+      "detailSha256": "97e5944b3c63d37056ecb267950373e474df34be5597e6cf525103bb1b1e946f",
       "appliesTo": {
         "minVersion": null,
-        "maxVersion": null,
+        "maxVersion": "1.2.0",
         "platforms": [
           "win32"
         ]

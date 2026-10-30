@@ -59,9 +59,10 @@ Copyright (c) 2026 0xyk3r. All rights reserved.
 
 第五条 第三方内容
 
-本软件不提供、不存储、不转码、不缓存、不转发任何直播内容。本软件通过第三方平
-台公开下发的地址将内容流交由本地播放组件播放，其行为与您使用浏览器访问该平台
-网页在性质上并无不同。您通过本软件访问的一切内容，其著作权及其他权利均归内容
+本软件不提供直播内容托管、录制保存、转码或转播服务。本软件通过第三方平台公开
+下发的地址将内容流交由本地播放组件播放，其行为与您使用浏览器访问该平台网页在
+性质上并无不同。必要的播放缓冲及直播对齐、显示保护分析在本机处理；分析样本不
+保存为媒体文件或上传。您通过本软件访问的一切内容，其著作权及其他权利均归内容
 的原始权利人（平台与主播）所有，与著作权人无关。
 
 第六条 免责
@@ -115,9 +116,11 @@ Co., Ltd.), Huya (Guangzhou Huya Information Technology Co., Ltd.), Bilibili
 (Shanghai Kuanyu Digital Technology Co., Ltd.), or any of their affiliates. All trademarks are the property of their
 respective owners.
 
-This software does not provide, store, transcode, cache or redistribute any
-streaming content. Copyright in all content accessed through this software
-belongs to its original rights holders.
+This software does not host, save recordings of, transcode or redistribute
+streaming content. Playback buffering and analysis for live-stream alignment
+and display protection take place locally. Analysis samples are not saved as
+media files or uploaded. Copyright in all content accessed through this
+software belongs to its original rights holders.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,

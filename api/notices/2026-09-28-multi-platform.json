@@ -6,7 +6,7 @@
   "expiresAt": "2026-11-28T00:00:00.000Z",
   "appliesTo": {
     "minVersion": null,
-    "maxVersion": null,
+    "maxVersion": "1.2.0",
     "platforms": [
       "win32"
     ]

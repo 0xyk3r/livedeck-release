@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "version": "1.3.0",
+  "releasedAt": "2026-10-30T00:00:00.000Z",
+  "summary": "新增多路直播对齐、粉丝牌总览、B 站直播录像与 OLED 防烧屏，焕新观看界面。",
+  "critical": false,
+  "changes": [
+    {
+      "type": "feature",
+      "text": "新增直播时间微调，可借助共同声音或画面时钟对齐多路直播"
+    },
+    {
+      "type": "feature",
+      "text": "新增三平台粉丝牌总览，集中查看成长、任务与待点亮粉丝牌"
+    },
+    {
+      "type": "feature",
+      "text": "斗鱼粉丝牌支持查看双倍卡、赠送背包荧光棒与批量弹幕任务"
+    },
+    {
+      "type": "feature",
+      "text": "新增 B 站主播公开直播录像目录，可选择分 P 并加入布局"
+    },
+    {
+      "type": "feature",
+      "text": "新增斗鱼团播活动，可筛选成员、添加窗口或切换当前主播"
+    },
+    {
+      "type": "feature",
+      "text": "新增 OLED 防烧屏模式，支持微移、闲置与静态亮区调暗"
+    },
+    {
+      "type": "feature",
+      "text": "本人弹幕增加专属标记与下划线，更容易找到自己的发言"
+    },
+    {
+      "type": "feature",
+      "text": "斗鱼神秘人弹幕采用独立样式，消息卡保留匿名身份"
+    },
+    {
+      "type": "change",
+      "text": "全新墨黑、瓷白界面，重新整理控制台、发现与工具入口"
+    },
+    {
+      "type": "change",
+      "text": "布局预设先预览再应用，监控与动态面板可换边或收起"
+    },
+    {
+      "type": "change",
+      "text": "录像页支持在看主播快捷选择，并可从详情返回原列表"
+    },
+    {
+      "type": "change",
+      "text": "全屏时自动收起控制台，增加顶部退出入口"
+    },
+    {
+      "type": "change",
+      "text": "移除数据源已停运的斗鱼公会目录"
+    },
+    {
+      "type": "perf",
+      "text": "优化启动加载，加入连贯的开场与舞台转场"
+    },
+    {
+      "type": "fix",
+      "text": "修复虎牙录像刷新后，失效日期筛选导致列表空白的问题"
+    },
+    {
+      "type": "fix",
+      "text": "修复部分请求失败后，后续直播或录像加载可能持续等待的问题"
+    }
+  ],
+  "assets": [
+    {
+      "kind": "portable",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.3.0-x64-Portable.exe",
+      "size": 109314234,
+      "sha256": "1f70ba724d28bf5c92375ae512d966e51b94800f8d982b8149590ea979a06695",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Portable.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Portable.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Portable.exe",
+        "https://gh.llkk.cc/https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Portable.exe",
+        "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Portable.exe"
+      ]
+    },
+    {
+      "kind": "installer",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.3.0-x64-Setup.exe",
+      "size": 109532183,
+      "sha256": "0ffdb991119c2abe960d07537239e61f4b212755c7d17f5d3d54f70eaeee93b1",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Setup.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Setup.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Setup.exe",
+        "https://gh.llkk.cc/https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Setup.exe",
+        "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Setup.exe"
+      ]
+    }
+  ]
+}
