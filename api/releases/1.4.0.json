@@ -138,7 +138,6 @@
       "mirrors": [
         "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Portable.exe",
         "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Portable.exe",
-        "https://gh.llkk.cc/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Portable.exe",
         "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Portable.exe"
       ]
     },
@@ -153,7 +152,6 @@
       "mirrors": [
         "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe",
         "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe",
-        "https://gh.llkk.cc/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe",
         "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe"
       ]
     }

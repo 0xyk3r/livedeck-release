@@ -30,7 +30,7 @@ https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4
 https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe
 ```
 
-可用的代理服务有 `gh-proxy.com`、`v6.gh-proxy.org`、`gh.llkk.cc`、`ghfast.top`，哪个快用哪个。这些服务由第三方免费提供，不受本项目控制，也可能随时失效。
+可用的代理服务有 `gh-proxy.com`、`v6.gh-proxy.org`、`ghfast.top`，哪个快用哪个。这些服务由第三方免费提供，不受本项目控制，也可能随时失效。
 
 > 用代理下载后**建议核对 SHA256**，见下一节。代理服务理论上有替换文件的能力，校验值是你确认文件完好的手段。
 
