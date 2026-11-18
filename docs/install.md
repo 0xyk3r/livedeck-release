@@ -13,7 +13,7 @@
 | | 安装版 `Setup.exe` | 便携版 `Portable.exe` |
 | --- | --- | --- |
 | 安装过程 | 可选安装位置 | 无，双击运行 |
-| 开始菜单／桌面图标 | 有 | 无 |
+| 开始菜单／桌面图标 | 首次交互安装时可分别勾选 | 不创建 |
 | 数据位置 | `%AppData%\LiveDeck` | exe 同级的 `LiveDeckData` |
 | 卸载方式 | Windows 已安装的应用 | 删除 exe；按需保留或删除数据目录 |
 | 适合 | 常用电脑 | U 盘或需要独立存放配置的场景 |
@@ -36,7 +36,9 @@ https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4
 https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe
 ```
 
-可用前缀：`https://gh-proxy.com/`、`https://v6.gh-proxy.org/`、`https://ghfast.top/`。这些是第三方公益服务，可能限流或失效；下载后建议核对发布页的 SHA256。
+当前提供的前缀：`https://gh-proxy.com/`、`https://v6.gh-proxy.org/`、`https://ghfast.top/`。这些是第三方服务，可能限流或失效；下载后请核对官方发布页的 SHA256。
+
+下载旧版时也请使用该版本 GitHub 发布页的原始附件，或将上面的前缀加到其原始地址前。1.0.0 至 1.3.0 的旧说明仍列有 `gh.llkk.cc`，它已不再是推荐的下载来源。
 
 ## 核对 SHA256
 
@@ -67,7 +69,7 @@ Get-FileHash .\LiveDeck-1.4.0-x64-Portable.exe -Algorithm SHA256
 
 便携版更新时先退出旧程序，再在原目录用新 exe 替换旧 exe，保留同级 `LiveDeckData`。文件名中的版本号可以变化，数据目录位置要保持一致。
 
-升级前建议导出布局与设置。1.4.0 的主要操作调整是控制台移到标题栏，以及斗鱼签到默认静默；详见[更新说明](../CHANGELOG.md#140--2026-11-18)。
+升级前可按需[分别备份布局、设置和补给站存档](#如何备份)。1.4.0 的主要操作调整是控制台移到标题栏，以及斗鱼签到默认静默；详见[更新说明](../CHANGELOG.md#140--2026-11-18)。
 
 ## 可选功能需要下载什么
 
@@ -87,7 +89,7 @@ Get-FileHash .\LiveDeck-1.4.0-x64-Portable.exe -Algorithm SHA256
 
 安装版：在 Windows「设置 → 应用 → 已安装的应用」中卸载。配置保留在 `%AppData%\LiveDeck`；确认不再需要后可手动删除。
 
-便携版：删除 exe 即可移除程序；删除 `LiveDeckData` 会同时删除布局、设置、登录状态及已下载的本地资源，操作前请按需备份。
+便携版：删除 exe 即可移除程序；删除 `LiveDeckData` 会同时删除布局、设置、成长记录、登录状态和已下载的字幕资源，操作前请按需备份。
 
 ## 数据目录里有什么
 
@@ -100,4 +102,14 @@ Get-FileHash .\LiveDeck-1.4.0-x64-Portable.exe -Algorithm SHA256
 | `speech-subtitles/` | 已下载的字幕模型与引擎 |
 | Chromium Profile 与本地存储 | 登录状态、布局、设置、监控和本地成长等数据 |
 
-配置与本地资源都位于对应的数据目录中。导出布局与设置可用于恢复这两类数据，不等于备份整个数据目录。
+可选 NVIDIA VFX 组件是例外：安装版和便携版默认共用 `%LOCALAPPDATA%\LiveDeck\Components\nvidia-vfx`，它不在上述数据目录内。把便携版迁移到另一台电脑后，如需该组件，请在「设置 → 画面增强」重新安装并检查兼容性。
+
+## 如何备份
+
+| 要保留的内容 | 导出入口 |
+| --- | --- |
+| 当前布局、命名布局、观看组 | 控制台 → 布局 → 已保存 → 导出布局 |
+| 观看偏好、智能导演配置、本地关注名单、关闭窗口行为 | 设置 → 数据与备份 → 导出设置 |
+| 金币、经验、任务与教学进度 | 设置 → 像素补给站 → 存档驿站 → 导出存档 |
+
+这三种导出都不包含平台登录凭据、开播监控名单或关注用户的行为明细，不等于备份整个数据目录。

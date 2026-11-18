@@ -2,7 +2,7 @@
 
 本目录提供 LiveDeck 的版本清单、更新说明、公告与下载信息。
 
-**JSON 文件与签名由源码仓库的 `pnpm run release:manifest` 生成，请勿手工修改。** 客户端先验签清单，再核对说明与资源的摘要；不匹配的数据会被拒绝。本 README 是维护说明，不参与摘要链。
+**JSON 文件与签名由源码仓库生成，请勿手工修改。** 两个仓库并排检出时，在源码仓库运行 `pnpm run release:manifest --out ../livedeck-release` 生成并签名，用 `pnpm run release:verify --dir ../livedeck-release` 离线校验。只改本 README 或用户文档不需要重新签名。
 
 ## 文件
 
@@ -14,7 +14,7 @@
 | `releases/<版本>.json` | 单个版本的更新说明与资源名称、大小、SHA256、下载地址 |
 | `notices/<编号>.json` | 单条公告的结构化正文 |
 
-说明与公告的 `detail` 使用相对路径，由已验签清单发现。读取新字段时应兼容旧格式，不能以重新序列化后的 JSON 验证原始清单签名。
+版本说明与公告的 `detail` 相对于 `api/`。先验签 `manifest.json` 的原始字节，再按对应的 `detailSha256` 校验正文；读取新字段时应兼容旧格式。历史版本的下载地址记录在各自的说明中，不一定与稳定版的镜像列表相同。
 
 ## 完整性与可信公钥
 
