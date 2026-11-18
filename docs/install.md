@@ -26,14 +26,14 @@
 
 官方发布页：[LiveDeck Releases](https://github.com/0xyk3r/livedeck-release/releases/latest)。选择需要的安装版或便携版。
 
-大陆网络直连较慢时，可在原始下载地址前拼接代理前缀。以 1.4.0 安装版为例：
+大陆网络直连较慢时，可在原始下载地址前拼接代理前缀。以 1.4.1 安装版为例：
 
 ```text
 # 原始地址
-https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe
+https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.1/LiveDeck-1.4.1-x64-Setup.exe
 
 # 加速地址
-https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe
+https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.1/LiveDeck-1.4.1-x64-Setup.exe
 ```
 
 当前提供的前缀：`https://gh-proxy.com/`、`https://v6.gh-proxy.org/`、`https://ghfast.top/`。这些是第三方服务，可能限流或失效；下载后请核对官方发布页的 SHA256。
@@ -45,8 +45,8 @@ https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/downloa
 发布页为安装版与便携版分别列出 SHA256。在 PowerShell 中运行与所下载文件对应的命令：
 
 ```powershell
-Get-FileHash .\LiveDeck-1.4.0-x64-Setup.exe -Algorithm SHA256
-Get-FileHash .\LiveDeck-1.4.0-x64-Portable.exe -Algorithm SHA256
+Get-FileHash .\LiveDeck-1.4.1-x64-Setup.exe -Algorithm SHA256
+Get-FileHash .\LiveDeck-1.4.1-x64-Portable.exe -Algorithm SHA256
 ```
 
 将 `Hash` 与官方下载页对应文件的值比较，大小写不影响。摘要相同说明文件与发布产物一致；不一致时不要运行，换个来源重新下载。请从官方发布页取得校验值。
@@ -69,7 +69,7 @@ Get-FileHash .\LiveDeck-1.4.0-x64-Portable.exe -Algorithm SHA256
 
 便携版更新时先退出旧程序，再在原目录用新 exe 替换旧 exe，保留同级 `LiveDeckData`。文件名中的版本号可以变化，数据目录位置要保持一致。
 
-升级前可按需[分别备份布局、设置和补给站存档](#如何备份)。1.4.0 的主要操作调整是控制台移到标题栏，以及斗鱼签到默认静默；详见[更新说明](../CHANGELOG.md#140--2026-11-18)。
+升级前可按需[分别备份布局、设置和补给站存档](#如何备份)。从 1.3.x 或更早版本升级时，请留意控制台入口和斗鱼签到默认行为的变化，详见 [1.4.0 更新说明](../CHANGELOG.md#140--2026-11-18)。
 
 ## 可选功能需要下载什么
 

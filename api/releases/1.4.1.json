@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "version": "1.4.1",
+  "releasedAt": "2026-11-18T15:26:00.000Z",
+  "summary": "修复插帧意外停止、回车打开直播弹幕面板后无法直接输入，以及播放控件在闲置时仍遮挡画面的问题。",
+  "critical": false,
+  "changes": [
+    {
+      "type": "fix",
+      "text": "修复短暂掉帧或部分音频设备的输出延迟导致插帧意外停止、画面退回原帧率的问题。",
+      "title": "画面插帧"
+    },
+    {
+      "type": "fix",
+      "text": "在选中的直播画面按回车打开发送面板后，可以直接输入弹幕。发送成功或留空按回车关闭面板后，再按回车就能写下一条。",
+      "title": "直播弹幕输入"
+    },
+    {
+      "type": "fix",
+      "text": "用 Tab 切到播放控件后，停止操作时控制栏会自动收起。再按 Tab 或 Shift+Tab 可从上次停留的位置继续。",
+      "title": "播放器控制栏"
+    },
+    {
+      "type": "fix",
+      "text": "星幕布局中，直播和录像画面侧边的重点与临时放大按钮会随控制栏一起收起。移动鼠标或按 Tab 即可再次显示。",
+      "title": "星幕侧边按钮"
+    }
+  ],
+  "assets": [
+    {
+      "kind": "portable",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.4.1-x64-Portable.exe",
+      "size": 117325772,
+      "sha256": "11b6a32045b9792cf5f89a71f049d3faa48ec1fe3a0c9b04cc89ac97cce7682a",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.1/LiveDeck-1.4.1-x64-Portable.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.1/LiveDeck-1.4.1-x64-Portable.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.1/LiveDeck-1.4.1-x64-Portable.exe",
+        "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.1/LiveDeck-1.4.1-x64-Portable.exe"
+      ]
+    },
+    {
+      "kind": "installer",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.4.1-x64-Setup.exe",
+      "size": 117543605,
+      "sha256": "e423d48d5e3e072d703c6a8af104e54881a2835bc5a5130604f3ec07189bc831",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.1/LiveDeck-1.4.1-x64-Setup.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.1/LiveDeck-1.4.1-x64-Setup.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.1/LiveDeck-1.4.1-x64-Setup.exe",
+        "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.1/LiveDeck-1.4.1-x64-Setup.exe"
+      ]
+    }
+  ]
+}

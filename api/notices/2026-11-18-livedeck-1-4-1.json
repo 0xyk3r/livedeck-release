@@ -1,0 +1,32 @@
+{
+  "id": "2026-11-18-livedeck-1-4-1",
+  "level": "info",
+  "title": "LiveDeck 1.4.1 播放器修复更新",
+  "publishedAt": "2026-11-18T15:26:00.000Z",
+  "expiresAt": "2026-12-18T15:26:00.000Z",
+  "appliesTo": {
+    "minVersion": "1.4.0",
+    "maxVersion": "1.4.1",
+    "platforms": [
+      "win32"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "在 1.4.0 中，画面短暂掉帧或音频设备的输出延迟较高时，插帧有时会自行停止，之后一直以原帧率播放。1.4.1 修复了这个问题。"
+    },
+    {
+      "type": "list",
+      "items": [
+        "在选中的直播画面按回车打开发送面板就能输入弹幕。发完一条或留空按回车关闭面板后，再按回车即可写下一条。",
+        "用 Tab 切换播放控件后，停止操作时控制栏会自动收起。星幕画面侧边的重点与临时放大按钮也会一同收起。"
+      ]
+    },
+    {
+      "type": "link",
+      "text": "查看 1.4.1 更新记录",
+      "url": "https://github.com/0xyk3r/livedeck-release/blob/main/CHANGELOG.md#141--2026-11-18"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-18T05:38:17.871Z",
+  "generatedAt": "2026-11-18T15:40:35.867Z",
   "endpoints": {
     "base": [
       "https://gh-proxy.com/https://raw.githubusercontent.com/0xyk3r/livedeck-release/main/api/",
@@ -12,16 +12,22 @@
   },
   "channels": {
     "stable": {
-      "version": "1.4.0",
-      "releasedAt": "2026-11-18T00:00:00.000Z",
+      "version": "1.4.1",
+      "releasedAt": "2026-11-18T15:26:00.000Z",
       "minSupportedVersion": "1.0.0",
-      "detail": "releases/1.4.0.json",
-      "detailSha256": "03e530be45852bcc5f9bba5b752c65f652af24f983eaa6e1cb1db3b6281bcb19",
-      "page": "https://github.com/0xyk3r/livedeck-release/releases/tag/v1.4.0"
+      "detail": "releases/1.4.1.json",
+      "detailSha256": "9ca4e001609382a7f33a5406e4f7a5864e1c75959875440ae7745de0f7a1eca7",
+      "page": "https://github.com/0xyk3r/livedeck-release/releases/tag/v1.4.1"
     }
   },
   "yanked": [],
   "history": [
+    {
+      "version": "1.4.1",
+      "releasedAt": "2026-11-18T15:26:00.000Z",
+      "detail": "releases/1.4.1.json",
+      "detailSha256": "9ca4e001609382a7f33a5406e4f7a5864e1c75959875440ae7745de0f7a1eca7"
+    },
     {
       "version": "1.4.0",
       "releasedAt": "2026-11-18T00:00:00.000Z",
@@ -54,6 +60,22 @@
     }
   ],
   "notices": [
+    {
+      "id": "2026-11-18-livedeck-1-4-1",
+      "level": "info",
+      "title": "LiveDeck 1.4.1 播放器修复更新",
+      "publishedAt": "2026-11-18T15:26:00.000Z",
+      "detail": "notices/2026-11-18-livedeck-1-4-1.json",
+      "detailSha256": "a73d38197628467c0d77b230bc481ff96a4b8c6a7c445c98eba3f0c37d1240dc",
+      "appliesTo": {
+        "minVersion": "1.4.0",
+        "maxVersion": "1.4.1",
+        "platforms": [
+          "win32"
+        ]
+      },
+      "expiresAt": "2026-12-18T15:26:00.000Z"
+    },
     {
       "id": "2026-11-18-livedeck-1-4",
       "level": "info",
