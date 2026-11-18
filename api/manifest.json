@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T00:05:40.013Z",
+  "generatedAt": "2026-11-18T05:27:41.057Z",
   "endpoints": {
     "base": [
       "https://gh-proxy.com/https://raw.githubusercontent.com/0xyk3r/livedeck-release/main/api/",
@@ -13,16 +13,22 @@
   },
   "channels": {
     "stable": {
-      "version": "1.3.0",
-      "releasedAt": "2026-10-30T00:00:00.000Z",
+      "version": "1.4.0",
+      "releasedAt": "2026-11-18T00:00:00.000Z",
       "minSupportedVersion": "1.0.0",
-      "detail": "releases/1.3.0.json",
-      "detailSha256": "247c0e2c427198bd093b90dbc53aa8cd54e8f998124eaff6a234c82b02476b35",
-      "page": "https://github.com/0xyk3r/livedeck-release/releases/tag/v1.3.0"
+      "detail": "releases/1.4.0.json",
+      "detailSha256": "f26eb9118f91879c0ddfd9e5cf8e589c60496eb9f7f943659e355ef2c5736f8f",
+      "page": "https://github.com/0xyk3r/livedeck-release/releases/tag/v1.4.0"
     }
   },
   "yanked": [],
   "history": [
+    {
+      "version": "1.4.0",
+      "releasedAt": "2026-11-18T00:00:00.000Z",
+      "detail": "releases/1.4.0.json",
+      "detailSha256": "f26eb9118f91879c0ddfd9e5cf8e589c60496eb9f7f943659e355ef2c5736f8f"
+    },
     {
       "version": "1.3.0",
       "releasedAt": "2026-10-30T00:00:00.000Z",
@@ -49,6 +55,38 @@
     }
   ],
   "notices": [
+    {
+      "id": "2026-11-18-livedeck-1-4",
+      "level": "info",
+      "title": "LiveDeck 1.4.0：星幕布局，字幕与影音增强",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "detail": "notices/2026-11-18-livedeck-1-4.json",
+      "detailSha256": "714b591a7336ea143e34ec305deb000f6d533b524cbace7f908b6d3cd7a7563c",
+      "appliesTo": {
+        "minVersion": null,
+        "maxVersion": "1.4.0",
+        "platforms": [
+          "win32"
+        ]
+      },
+      "expiresAt": "2027-01-18T00:00:00.000Z"
+    },
+    {
+      "id": "2026-11-18-speech-subtitles",
+      "level": "important",
+      "title": "实时字幕的识别方式与数据使用",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "detail": "notices/2026-11-18-speech-subtitles.json",
+      "detailSha256": "37030666de5b1cec1097f540d51b0920fe0ee34c061d7acfc6a8731aa5223631",
+      "appliesTo": {
+        "minVersion": "1.4.0",
+        "maxVersion": null,
+        "platforms": [
+          "win32"
+        ]
+      },
+      "expiresAt": null
+    },
     {
       "id": "2026-10-30-douyu-badge-tasks",
       "level": "important",

@@ -1,6 +1,6 @@
 {
   "algorithm": "ed25519",
   "keyId": "k1",
-  "signature": "DD2ZyAsG5CIy1X8j4GLziIcuR/OmiipnJ4j0yYfzUStVQjmxcRZl5nYTEuTf6/r7zaRXfv37InRIBBGjRTLnDg==",
-  "signedAt": "2026-10-30T00:05:40.017Z"
+  "signature": "+q0fmflRiRPal8QNMTS1EZ0USpk2tjAyPdF+2YAbdApMsJF9prV0NYDFUAIxAE75OFzfNkVKZKRG3YFzQZeMDQ==",
+  "signedAt": "2026-11-18T05:27:41.060Z"
 }

@@ -62,7 +62,9 @@ Copyright (c) 2026 0xyk3r. All rights reserved.
 本软件不提供直播内容托管、录制保存、转码或转播服务。本软件通过第三方平台公开
 下发的地址将内容流交由本地播放组件播放，其行为与您使用浏览器访问该平台网页在
 性质上并无不同。必要的播放缓冲及直播对齐、显示保护分析在本机处理；分析样本不
-保存为媒体文件或上传。您通过本软件访问的一切内容，其著作权及其他权利均归内容
+保存为媒体文件或上传。实时字幕需主动开启；本地识别不上传音频，文本翻译发送字
+幕文字，Echo 在线识别发送播放器音频至第三方服务，详见免责声明中的隐私说明。
+您通过本软件访问的一切内容，其著作权及其他权利均归内容
 的原始权利人（平台与主播）所有，与著作权人无关。
 
 第六条 免责
@@ -119,7 +121,11 @@ respective owners.
 This software does not host, save recordings of, transcode or redistribute
 streaming content. Playback buffering and analysis for live-stream alignment
 and display protection take place locally. Analysis samples are not saved as
-media files or uploaded. Copyright in all content accessed through this
+media files or uploaded. Real-time subtitles require explicit activation:
+local recognition does not upload audio, text translation sends subtitle
+text, and Echo online recognition sends player audio to a third-party
+service. See the privacy section of the Disclaimer for details.
+Copyright in all content accessed through this
 software belongs to its original rights holders.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR

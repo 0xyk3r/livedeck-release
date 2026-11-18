@@ -1,0 +1,46 @@
+{
+  "id": "2026-11-18-speech-subtitles",
+  "level": "important",
+  "title": "实时字幕的识别方式与数据使用",
+  "publishedAt": "2026-11-18T00:00:00.000Z",
+  "expiresAt": null,
+  "appliesTo": {
+    "minVersion": "1.4.0",
+    "maxVersion": null,
+    "platforms": [
+      "win32"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "实时字幕为 BETA 功能，需要你主动在播放器中开启，每次最多一路。它读取当前播放器的声音，不使用麦克风。选择识别方式前，请了解两种模式的数据使用："
+    },
+    {
+      "type": "list",
+      "items": [
+        "本地 ASR + Index-Translate：先下载本地引擎与语音模型，在本机识别语音；选择翻译时，向 Index-Translate 发送字幕文字，不上传音频",
+        "Echo S2TT：无需下载语音模型，会将播放器音频片段发送至官方演示服务，返回识别原文与译文；选择只显示原文仍需要在线识别",
+        "开启「优先使用视频已有字幕」后，使用可读取的现成字幕，选择翻译显示时向 Index-Translate 发送字幕文字；没有现成字幕时使用所选语音模式"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "如不希望发送音频，请选择本地模式；如不希望发送字幕文字，请在本地模式选择「原文」。识别和翻译可能有误，也会受到背景音乐、多人说话、设备性能与网络等待的影响。"
+    },
+    {
+      "type": "paragraph",
+      "text": "Echo 使用上游的官方演示服务，其可用性与限流由服务提供方决定。字幕只用于辅助理解，不能保证实时或准确。"
+    },
+    {
+      "type": "link",
+      "text": "查看实时字幕使用说明",
+      "url": "https://github.com/0xyk3r/livedeck-release/blob/main/docs/faq.md"
+    },
+    {
+      "type": "link",
+      "text": "阅读隐私与数据使用说明",
+      "url": "https://github.com/0xyk3r/livedeck-release/blob/main/DISCLAIMER.md"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "version": "1.4.0",
+  "releasedAt": "2026-11-18T00:00:00.000Z",
+  "summary": "新增星幕布局、实时字幕翻译与画面、声音增强，焕新观看工作台。",
+  "critical": false,
+  "changes": [
+    {
+      "type": "breaking",
+      "text": "控制台改从标题栏打开。应用全屏时，将鼠标移到右上角唤出入口，或按反引号／波浪键开合控制台；原先从屏幕底边唤出的方式不再使用。",
+      "title": "控制台入口移至标题栏",
+      "migration": "在标题栏点击控制台按钮。全屏时将鼠标移到右上角，再点击控制台按钮；也可按反引号／波浪键直接开合。"
+    },
+    {
+      "type": "breaking",
+      "text": "斗鱼签到默认开启静默模式，跳过尚未完成的活动弹幕任务，其他签到步骤照常执行。需要发送活动弹幕完成任务时，请先关闭静默模式再开始签到。",
+      "title": "斗鱼签到默认使用静默模式",
+      "migration": "打开斗鱼签到面板，确认是否需要执行活动弹幕任务；需要时关闭「静默模式」，再点击开始签到。"
+    },
+    {
+      "type": "feature",
+      "text": "新增自动编排的星幕布局，可同时聚焦一路或多路、拖拽交换画面、固定格位和调整构图；按住 Z 临时放大，滚轮巡看，按住 A 临时独听。首次使用默认星幕，已有布局继续按原模式恢复。",
+      "title": "星幕布局"
+    },
+    {
+      "type": "feature",
+      "text": "标题栏新增快速添加，可从监控主播中连续选台，也可按主播名、房间号或链接查找新来源；Ctrl+K 打开，已在观看的来源可直接定位。",
+      "title": "快速添加"
+    },
+    {
+      "type": "feature",
+      "text": "直播与视频可显示原文、译文或双语字幕，支持本地语音识别或 Echo 在线识别，并可优先翻译视频已有字幕。可调整字幕字号、颜色、宽度与行数；Echo 会上传播放器音频，本地模式在翻译时只发送字幕文字。",
+      "title": "实时字幕与翻译 BETA"
+    },
+    {
+      "type": "feature",
+      "text": "新增 NVIDIA VFX、AMD AMF 与通用 GPU 插帧。VFX 与通用 GPU 可选 2／4／8 倍或指定帧率，目标最高 480 fps；AMD 仅支持 2 倍。8 倍为实验性选项，实际效果与帧率取决于设备和内容。",
+      "title": "画面插帧 BETA"
+    },
+    {
+      "type": "feature",
+      "text": "新增 NVIDIA、AMD 与通用 GPU 超分，可选择输出分辨率、画质或锐化强度，单独使用或与两倍插帧组合；同时最多一路，HDR 与系统画中画保留原视频。",
+      "title": "超分辨率 BETA"
+    },
+    {
+      "type": "feature",
+      "text": "新增响度平衡，校准各路常态音量，减少切换主播时的音量落差；支持逐路微调和重新校准，保留节目原有的强弱变化。",
+      "title": "多路响度平衡"
+    },
+    {
+      "type": "feature",
+      "text": "新增对白增强、背景降噪与夜间模式，提供访谈、游戏直播和音乐预设，并可随时对比原声；处理在本机完成，不使用麦克风。",
+      "title": "音频增强 BETA"
+    },
+    {
+      "type": "feature",
+      "text": "发现页新增 B 站视频搜索，可按综合、最多播放或最新发布排序，直接将视频加入布局观看。",
+      "title": "B 站视频搜索"
+    },
+    {
+      "type": "feature",
+      "text": "虎牙支持上游提供的 HEVC、HDR 与高分辨率画质，清晰度菜单显示当前账号权限和设备限制；HDR 播放需要相应显示输出与解码能力。",
+      "title": "虎牙高画质与 HDR"
+    },
+    {
+      "type": "feature",
+      "text": "新增虎牙赛事赛程、主直播与二路入口，支持上游有效的选手 POV 和已获授权的直播回看；粉丝牌可手动打卡。视角、回看与画质范围以平台实际开放为准。",
+      "title": "虎牙赛事与观看能力"
+    },
+    {
+      "type": "feature",
+      "text": "鱼吧新增随看与展开阅读、应用内话题页、关注动态、热门推荐及排行榜；登录后可查看收藏、赞过的内容并主动收藏帖子。",
+      "title": "鱼吧阅读与个人内容"
+    },
+    {
+      "type": "feature",
+      "text": "斗鱼高能弹幕、虎牙上头条与 B 站 SC 可设置金额门槛，并选择精简展示或跟随平台时长；默认精简展示，需要沿用平台时长时可在房间事件设置中切换。",
+      "title": "付费留言筛选"
+    },
+    {
+      "type": "change",
+      "text": "重新整理播放器控制栏、设置、布局、发现、监控、时间线与粉丝牌面板，完善墨黑和瓷白主题、窄窗口操作及状态反馈；标题栏可快捷调节总音量。",
+      "title": "观看界面与常用面板"
+    },
+    {
+      "type": "change",
+      "text": "发现页记住上次选择的平台、内容类型、栏目及开播筛选，下次打开可继续使用原来的浏览入口。",
+      "title": "发现页记住浏览选择"
+    },
+    {
+      "type": "change",
+      "text": "重新设计像素营地与任务界面，支持切换课程后继续上次讲解，并加入字幕、画面增强和声音增强等新功能指南。",
+      "title": "像素补给站与功能指南"
+    },
+    {
+      "type": "change",
+      "text": "签到与续牌可逐项查看实时结果、筛选待处理任务，并在执行期间继续查看已完成项目。",
+      "title": "斗鱼签到与续牌进度"
+    },
+    {
+      "type": "fix",
+      "text": "修复部分斗鱼 CDN 线路被拦截而无法播放的问题。"
+    },
+    {
+      "type": "fix",
+      "text": "修复斗鱼观看历史将正常直播误标为轮播的问题。"
+    },
+    {
+      "type": "fix",
+      "text": "修复 OLED 防烧屏在白底内容滚动或场景切换后残留暗区的问题。"
+    },
+    {
+      "type": "fix",
+      "text": "修复斗鱼签到校验与鱼吧请求无响应时持续等待、无法重试的问题。"
+    },
+    {
+      "type": "fix",
+      "text": "修复更新下载失败后，再次下载可能无法继续的问题。"
+    },
+    {
+      "type": "fix",
+      "text": "修复直播自动刷新时可能切回旧播放源的问题。"
+    },
+    {
+      "type": "fix",
+      "text": "修复重名布局存档可能导致覆盖或撤销错误的问题；读取或导入时为重名项添加名称后缀，保留全部存档。"
+    }
+  ],
+  "assets": [
+    {
+      "kind": "portable",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.4.0-x64-Portable.exe",
+      "size": 117326137,
+      "sha256": "8267061a0dd00d7fddfa6fcafb56aa9498545d8f0cd17a7bd03f0d465bb06bac",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Portable.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Portable.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Portable.exe",
+        "https://gh.llkk.cc/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Portable.exe",
+        "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Portable.exe"
+      ]
+    },
+    {
+      "kind": "installer",
+      "platform": "win32",
+      "arch": "x64",
+      "name": "LiveDeck-1.4.0-x64-Setup.exe",
+      "size": 117544048,
+      "sha256": "8ec9bdde4774208639ece6cd9b4c37de43186205cf74525e6fafb680b9db3394",
+      "url": "https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe",
+      "mirrors": [
+        "https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe",
+        "https://v6.gh-proxy.org/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe",
+        "https://gh.llkk.cc/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe",
+        "https://ghfast.top/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe"
+      ]
+    }
+  ]
+}

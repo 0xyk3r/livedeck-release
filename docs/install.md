@@ -20,14 +20,14 @@
 
     https://github.com/0xyk3r/livedeck-release/releases/latest
 
-大陆网络直连 GitHub 下载可能很慢或失败，可以用公益加速服务，在原地址前面拼一个代理前缀即可。以 1.3.0 安装版为例（其他版本把两处版本号换掉）：
+大陆网络直连 GitHub 下载可能很慢或失败，可以用公益加速服务，在原地址前面拼一个代理前缀即可。以 1.4.0 安装版为例（其他版本把两处版本号换掉）：
 
 ```
 # 原始地址
-https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Setup.exe
+https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe
 
 # 加速地址（在前面拼上代理域名）
-https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.3.0/LiveDeck-1.3.0-x64-Setup.exe
+https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/download/v1.4.0/LiveDeck-1.4.0-x64-Setup.exe
 ```
 
 可用的代理服务有 `gh-proxy.com`、`v6.gh-proxy.org`、`gh.llkk.cc`、`ghfast.top`，哪个快用哪个。这些服务由第三方免费提供，不受本项目控制，也可能随时失效。
@@ -39,7 +39,7 @@ https://gh-proxy.com/https://github.com/0xyk3r/livedeck-release/releases/downloa
 每个 Release 的说明里都列了文件的 SHA256 值。核对方法（PowerShell）：
 
 ```powershell
-Get-FileHash .\LiveDeck-1.3.0-x64-Setup.exe -Algorithm SHA256
+Get-FileHash .\LiveDeck-1.4.0-x64-Setup.exe -Algorithm SHA256
 ```
 
 把输出的 `Hash` 与发布页上的值比对，一致即说明文件与开发者构建出来的完全相同。大小写不影响，PowerShell 输出大写，发布页是小写。
@@ -71,6 +71,8 @@ Get-FileHash .\LiveDeck-1.3.0-x64-Setup.exe -Algorithm SHA256
 - 需要能访问所观看平台（斗鱼、虎牙、哔哩哔哩）的网络环境
 
 暂无 32 位、ARM、macOS、Linux 版本。
+
+基础观看不要求下载额外组件。实时字幕的本地模式需要主动下载 CPU 引擎与语音模型；Echo 在线模式无需本地模型，但会上传播放器音频。NVIDIA 原生插帧或超分需要在「设置 → 画面增强」中安装可选 VFX 组件并检查兼容性；通用 GPU 方案无需安装原生组件。HDR、高帧率插帧和超分的实际可用性还取决于显示输出、显卡、驱动及内容，详见 [常见问题](faq.md)。
 
 ## 卸载
 
