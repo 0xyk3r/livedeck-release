@@ -1,45 +1,73 @@
 # api/ — 机读区
 
-本目录由 LiveDeck 客户端读取，用于检查版本更新与公告。
+本目录提供 LiveDeck 的版本清单、更新说明、公告与下载信息。
 
-**请勿手工编辑本目录下的任何文件。** 全部内容由源码仓库的
-`pnpm run release:manifest` 生成并签名，手改会导致签名验证失败，客户端将拒绝
-使用整份清单。
+**JSON 文件与签名由源码仓库的 `pnpm run release:manifest` 生成，请勿手工修改。** 客户端先验签清单，再核对说明与资源的摘要；不匹配的数据会被拒绝。本 README 是维护说明，不参与摘要链。
 
 ## 文件
 
 | 文件 | 说明 |
 | --- | --- |
-| `manifest.json` | 唯一入口。客户端只认这个文件的地址，其余全部通过它发现。 |
-| `manifest.json.sig` | 上述文件的 Ed25519 签名。 |
-| `public-keys.json` | 验签公钥。与客户端内置的是同一份，此处公开供第三方独立验证。 |
-| `releases/<版本>.json` | 单个版本的更新内容与下载资源（含 SHA256）。 |
-| `notices/<编号>.json` | 单条公告的正文。 |
+| `manifest.json` | 清单入口，包含稳定版本、最低支持版本、历史版本、公告及可用端点 |
+| `manifest.json.sig` | 清单原始字节的 Ed25519 签名 |
+| `public-keys.json` | 公开公钥表，供核对与独立验签；客户端使用构建期内置的可信公钥 |
+| `releases/<版本>.json` | 单个版本的更新说明与资源名称、大小、SHA256、下载地址 |
+| `notices/<编号>.json` | 单条公告的结构化正文 |
 
-## 完整性
+说明与公告的 `detail` 使用相对路径，由已验签清单发现。读取新字段时应兼容旧格式，不能以重新序列化后的 JSON 验证原始清单签名。
 
-`manifest.json` 经 Ed25519 签名，签名私钥离线保管，不在任何仓库中。
+## 完整性与可信公钥
 
-清单内记录了 `releases/` 与 `notices/` 下每个文件的 SHA256，这些文件内又记录了
-每个二进制资源的 SHA256 —— 因此一个签名即可传递保护整条链。客户端在验签失败时
-会丢弃该来源的结果并尝试下一个镜像，而不是接受未经验证的数据。
+清单内记录版本说明与公告正文的 SHA256，版本说明又记录二进制资源的 SHA256。一个有效签名保护整条摘要链；客户端遇到签名失败会尝试其他端点。
 
-任何人都可以独立验证：
+验签必须使用事先可信的公钥。不要把未知镜像返回的清单、签名和公钥表一起当作可信输入，否则镜像可以同时替换三者。请从已核实的发布者来源取得并核对公钥，保存为 `trusted-public-keys.json`。已撤销的密钥不能用于验签。
 
-```bash
-# 需要 Node.js
-node -e "
-const c=require('node:crypto'),f=require('node:fs');
-const m=f.readFileSync('manifest.json');
-const s=JSON.parse(f.readFileSync('manifest.json.sig','utf8'));
-const k=JSON.parse(f.readFileSync('public-keys.json','utf8'));
-const key=k.keys.find(x=>x.id===s.keyId);
-const pub=c.createPublicKey({key:Buffer.from(key.publicKey,'base64'),format:'der',type:'spki'});
-console.log(c.verify(null,m,pub,Buffer.from(s.signature,'base64'))?'签名有效':'签名无效');
-"
+签名与摘要确认来源及完整性，不代表系统已验证安装包发布者身份；当前 Windows 安装包未使用代码签名证书。
+
+## 独立验签
+
+将 `manifest.json`、`manifest.json.sig` 和已核实的 `trusted-public-keys.json` 放在同一目录。把以下代码保存为 `verify-manifest.mjs`，在该目录运行 `node verify-manifest.mjs`（需要 Node.js）：
+
+```javascript
+import fs from 'node:fs'
+import crypto from 'node:crypto'
+
+const bytes = fs.readFileSync('manifest.json')
+const signature = JSON.parse(fs.readFileSync('manifest.json.sig', 'utf8'))
+const { keys } = JSON.parse(fs.readFileSync('trusted-public-keys.json', 'utf8'))
+const usable = keys.filter(key => key.status !== 'revoked' && key.algorithm === 'ed25519')
+const ordered = [
+  ...usable.filter(key => key.id === signature.keyId),
+  ...usable.filter(key => key.id !== signature.keyId),
+]
+const valid =
+  signature.algorithm === 'ed25519' &&
+  typeof signature.signature === 'string' &&
+  signature.signature !== '' &&
+  ordered.some(key => {
+    try {
+      const publicKey = crypto.createPublicKey({
+        key: Buffer.from(key.publicKey, 'base64'),
+        format: 'der',
+        type: 'spki',
+      })
+      return (
+        publicKey.asymmetricKeyType === 'ed25519' &&
+        crypto.verify(null, bytes, publicKey, Buffer.from(signature.signature, 'base64'))
+      )
+    } catch {
+      return false
+    }
+  })
+
+console.log(valid ? '签名有效' : '签名无效')
+process.exitCode = valid ? 0 : 1
 ```
 
-## 缓存
+上述命令只验证清单签名。之后仍需按清单中的 SHA256 核对版本说明、公告正文与实际下载文件；安装包核对步骤见[安装说明](../docs/install.md#核对-sha256)。
 
-客户端请求时会带一个按小时取整的 `ts` 查询参数，用于在保留 CDN 缓存收益的同时把
-陈旧窗口压到一小时以内。因此新发布的清单最长约一小时后才会被全部客户端看到。
+## 缓存与传播
+
+客户端请求带按小时取整的 `ts` 查询参数，每小时使用新的缓存键。客户端也按自己的检查周期获取更新，第三方 CDN 可能缓存或暂时不可用，因此不能保证发布后一小时内所有客户端都已看到新版。
+
+需要及时确认时可主动检查更新，或访问[官方最新发布页](https://github.com/0xyk3r/livedeck-release/releases/latest)。
